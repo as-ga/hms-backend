@@ -81,12 +81,12 @@
   </table>
   <footer id="footer"></footer>
   <script>
-    fetch('../pages/header.html')
+    fetch('pages/header.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('header').innerHTML = html;
       });
-    fetch('../pages/footer.html')
+    fetch('pages/footer.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('footer').innerHTML = html;
