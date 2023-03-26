@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Appointment</title>
+  <link rel="stylesheet" href="css and js/style.css">
+</head>
+
+<body>
+  <header id="header"></header>
+
+
+  <table style="width:100%">
+    <tr>
+      <td colspan="8"><img src="images/banner3.jpg" style="width:100%;"></td>
+    </tr>
+
+    <tr>
+      <td colspan="8" style="padding:5px 20px;">
+        <p>Book a visit with your doctor</p>
+        <h1>MAKE AN APPOINTMENT NOW</h1>
+
+        <form>
+
+          <label>Your Name (required)</label>
+          <input type="text" required><br />
+
+          <label>Your Email (required)</label>
+          <input type="email" required><br />
+
+          <label>Select Your Doctor</label>
+          <select>
+            <option>Select Doctor</option>
+
+            <option>Stephanie Wosniack</option>
+            <option>Hellen Lowe</option>
+            <option>Emily Washington</option>
+            <option>Sussie Wolff</option>
+
+          </select><br />
+
+          <label>Appointment Date</label>
+          <input type="date" required><br />
+
+          <label>Your Message</label>
+          <textarea rows="10" cols="40"></textarea><br />
+
+          <input type="submit" value="Book Appointment">
+
+        </form>
+
+      </td>
+    </tr>
+
+  </table>
+  <footer id="footer"></footer>
+  <script>
+    fetch('pages/header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header').innerHTML = html;
+      });
+    fetch('pages/footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      });
+
+  </script>
+
+
+</body>
+
+</html>

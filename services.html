@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Services</title>
+  <link rel="stylesheet" href="css and js/style.css">
+
+</head>
+
+<body>
+  <header id="header"></header>
+
+  <table style="width:100%">
+
+
+    <tr>
+      <td colspan="8"><img src="images/banner.avif" style="width:100%;"></td>
+    </tr>
+
+
+    <tr>
+      <td colspan="8" style="padding:5px 20px;">
+        <h1>Our Services</h1>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" style="padding:20px;">
+        <img src="images/serv1.jpg" style="width:330px; height:300px;">
+        <p>For your child whitest teeths</p>
+        <h4>DENTIST</h4>
+        <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
+      </td>
+
+      <td colspan="2" style="padding:20px;">
+        <img src="images/serv2.jpg" style="width:330px; height:300px;">
+        <p>Got a broken heart?</p>
+        <h4>CARDIOLOGIST</h4>
+        <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
+      </td>
+
+
+      <td colspan="2" style="padding:20px;">
+        <img src="images/serv3.jpg" style="width:330px; height:300px;">
+        <p>Neck or back pain?</p>
+        <h4>CHIROPRACTOR</h4>
+        <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
+      </td>
+
+      <td colspan="2" style="padding:20px;">
+        <img src="images/serv4.jpg" style="width:330px; height:300px;">
+        <p>Oral problems?</p>
+        <h4>PEDIATRICIAN</h4>
+        <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
+      </td>
+
+    </tr>
+
+    <tr>
+      <td colspan="2" style="padding:20px;">
+        <img src="images/serv5.jpg" style="width:330px; height:300px;">
+        <p>What we do</p>
+        <h4>WE CARE</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu hendrerit ex. Quisque imperdiet vel
+          odio nec scelerisque.</p>
+      </td>
+
+      <td colspan="2" style="padding:20px;">
+        <img src="images/serv6.jpg" style="width:330px; height:300px;">
+        <p>We give you</p>
+        <h4>MEDICAL ADVICES</h4>
+        <p>Quisque imperdiet vel odio nec scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Phasellus eu hendrerit ex.</p>
+      </td>
+
+
+      <td colspan="2" style="padding:20px;">
+        <img src="images/serv7.jpg" style="width:330px; height:300px;">
+        <p>We offer professional</p>
+        <h4>MEDICAL SERVICES</h4>
+        <p>Quisque felis felis, facilisis eu maximus non, luctus ac dui. Duis ac ultrices felis, quis volutpat ipsum.
+          Aenean augue metus, suscipit non risus quis.</p>
+      </td>
+
+      <td colspan="2" style="padding:20px;">
+        <img src="images/serv8.jpg" style="width:330px; height:300px;">
+        <p>We are</p>
+        <h4>PROFESSIONAL</h4>
+        <p>Nullam vitae mi nec orci venenatis aliquet. Donec eget lacus dignissim, vehicula ligula ac, pharetra purus.
+          Nunc tempus egestas arcu, ac maximus elit lacinia sed.</p>
+      </td>
+
+    </tr>
+
+
+  </table>
+  <footer id="footer"></footer>
+  <script>
+    fetch('pages/header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header').innerHTML = html;
+      });
+    fetch('pages/footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      });
+
+  </script>
+</body>
+
+</html>

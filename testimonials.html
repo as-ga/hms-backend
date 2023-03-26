@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Testimonials</title>
+  <link rel="stylesheet" href="css and js/style.css">
+
+<body>
+  <header id="header"></header>
+
+  <table style="width:100%">
+
+    <tr>
+      <td colspan="8"><img src="images/banner.avif" style="width:100%;"></td>
+    </tr>
+
+    <tr>
+      <td colspan='8' style="padding:20px;">
+        <p>What our patient say</p>
+        <h1>THE WORD OF MOUTH</h1>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" style="padding:20px;">
+        <p>Ut tincidunt dolor felis, et accumsan ante elementum in. Fusce convallis, dui ac malesuada posuere, ante diam
+          viverra ligula, eu mollis sapien ex quis ex.</p>
+        <img src="images/test1.png">
+        <h4>PAUL SMITH, MANHATTAN</h4>
+      </td>
+
+      <td colspan="2" style="padding:20px;">
+        <p>Donec eros massa, gravida ac lectus et, pharetra interdum lectus. Sed vel scelerisque quam, id fringilla
+          ante. Vivamus sagittis velit quis dictum ultricies.</p>
+        <img src="images/test2.png">
+        <h4>JANE CROFT, BOSTON</h4>
+      </td>
+
+
+      <td colspan="2" style="padding:20px;">
+        <p>Vestibulum mattis diam quis interdum suscipit. Nam orci ipsum, scelerisque elementum ultricies sit amet,
+          facilisis eu eros. Phasellus turpis ante, venenatis.</p>
+        <img src="images/test3.png">
+        <h4>MICHELLE ECCLESTONE, CHICAGO</h4>
+      </td>
+
+      <td colspan="2" style="padding:20px;">
+        <p>Donec eros massa, gravida ac lectus et, pharetra interdum lectus. Sed vel scelerisque quam, id fringilla
+          ante. Vivamus sagittis velit quis dictum ultricies. Quisque posuere rhoncus erat, sit amet aliquet augue.</p>
+        <img src="images/test4.png">
+        <h4>PAULA SMITH</h4>
+      </td>
+
+    </tr>
+
+    <tr>
+      <td colspan="2" style="padding:20px;">
+        <p>Quisque posuere rhoncus erat, sit amet aliquet augue. Nunc eleifend ornare venenatis. Donec eros massa,
+          gravida ac lectus et, pharetra interdum lectus. Sed vel scelerisque quam, id fringilla ante.</p>
+        <img src="images/test5.png">
+        <h4>ANN CLARK</h4>
+      </td>
+
+      <td colspan="2" style="padding:20px;">
+        <p>Mauris pharetra a mi ac aliquam. Nunc malesuada egestas vehicula. Ut orci orci, eleifend quis accumsan eget,
+          luctus non nisi. Sed tincidunt risus quis tincidunt ornare. Interdum et malesuada fames ac ante ipsum primis
+          in faucibus. Vestibulum placerat tempor metus, dictum pellentesque nunc ullamcorper eu.</p>
+        <img src="images/test6.png">
+        <h4>JENNA SPIELBERG, NEW YORK</h4>
+      </td>
+
+
+      <td colspan="2" style="padding:20px;">
+        <p>Vestibulum mattis diam quis interdum suscipit. Nam orci ipsum, scelerisque elementum ultricies sit amet,
+          facilisis eu eros. Phasellus turpis ante, venenatis.</p>
+        <img src="images/test3.png">
+        <h4>MICHELLE ECCLESTONE, CHICAGO</h4>
+      </td>
+
+      <td colspan="2" style="padding:20px;">
+        <p>Donec eros massa, gravida ac lectus et, pharetra interdum lectus. Sed vel scelerisque quam, id fringilla
+          ante. Vivamus sagittis velit quis dictum ultricies. Quisque posuere rhoncus erat, sit amet aliquet augue.</p>
+        <img src="images/test4.png">
+        <h4>PAULA SMITH</h4>
+      </td>
+
+    </tr>
+  </table>
+  <footer id="footer"></footer>
+  <script>
+    fetch('pages/header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header').innerHTML = html;
+      });
+    fetch('pages/footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Doctors</title>
+  <link rel="stylesheet" href="css and js/style.css">
+
+</head>
+
+<body>
+  <header id="header"></header>
+  <table style="width:100%">
+    <tr>
+      <td colspan="8"><img src="images/banner3.jpg" style="width:100%;"></td>
+    </tr>
+
+    <tr>
+      <td colspan="8" style="padding:5px 20px;">
+        <h1>Our Doctors</h1>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" style="padding:20px;">
+        <img src="images/doc1.jpg" style="width:330px; height:300px;">
+        <p>Pediatrician</p>
+        <h4>Sussie Wolff</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </td>
+
+      <td colspan="2" style="padding:20px;">
+        <img src="images/doc2.jpg" style="width:330px; height:300px;">
+        <p>Dental surgeon</p>
+        <h4>Ashley Willson</h4>
+        <p>Vivamus sapien ligula, tempus ac ipsum ac, mattis luctus magna.</p>
+      </td>
+
+
+      <td colspan="2" style="padding:20px;">
+        <img src="images/doc3.jpg" style="width:330px; height:300px;">
+        <p>Cosmetic Surgeon</p>
+        <h4>Gabriela Beckett</h4>
+        <p>Donec varius libero tortor, eu luctus ipsum aliquet ut.</p>
+      </td>
+
+      <td colspan="2" style="padding:20px;">
+        <img src="images/doc4.jpg" style="width:330px; height:300px;">
+        <p>General Doctor</p>
+        <h4>George Button</h4>
+        <p>Curabitur lobortis, eros eu efficitur lacinia, velit magna cursus nisi.</p>
+      </td>
+
+    </tr>
+
+    <tr>
+      <td colspan="2" style="padding:20px;">
+        <img src="images/doc5.jpg" style="width:330px; height:300px;">
+        <p>Cosmetic Surgeon</p>
+        <h4>Jasmine Jordan</h4>
+        <p>Donec varius libero tortor, eu luctus ipsum aliquet ut..</p>
+      </td>
+
+      <td colspan="2" style="padding:20px;">
+        <img src="images/doc6.jpg" style="width:330px; height:300px;">
+        <p>Surgeon Nurse</p>
+        <h4>Irene McDermott</h4>
+        <p>Curabitur lobortis, eros eu efficitur lacinia, velit magna cursus nisi.</p>
+      </td>
+
+
+      <td colspan="2" style="padding:20px;">
+        <img src="images/doc7.jpg" style="width:330px; height:300px;">
+        <p>Pediatrician</p>
+        <h4>Hellen Lowe</h4>
+        <p>Aliquam egestas, ipsum sed semper placerat, mauris ligula tempus.</p>
+      </td>
+
+      <td colspan="2" style="padding:20px;">
+        <img src="images/doc8.jpg" style="width:330px; height:300px;">
+        <p>Dental surgeon</p>
+        <h4>Emily Washington</h4>
+        <p>Curabitur lobortis, eros eu efficitur lacinia, velit magna cursus nisi.</p>
+      </td>
+
+    </tr>
+  </table>
+
+  <footer id="footer"></footer>
+  <script>
+    fetch('pages/header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header').innerHTML = html;
+      });
+    fetch('pages/footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      });
+
+  </script>
+
+</body>
+
+</html>
