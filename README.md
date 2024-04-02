@@ -69,7 +69,7 @@ This is the backend component of the Hospital Management System (HMS), designed 
 
 ## Author
 
-- [Ashutosh Gaurav](https://github.com/as-ga)
+- [Ashutosh Gaurav](https://www.linkedin.com/in/ashutosh-li/)
 ## Contributing
 
 Contributions are welcome! Please feel free to open issues or submit pull requests.
