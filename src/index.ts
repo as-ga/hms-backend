@@ -1,15 +1,13 @@
-import dotenv from "dotenv";
-import express from 'express';
+import connectDB from "./db/dbConnect.js";
+import conf from "./conf/conf.js";
+import { app } from "./app.js";
 
-dotenv.config({ path: "./.env" })
-
-const app = express();
-const port = process.env.PORT || 3000;
-
-app.get('/', (req, res) => {
-  res.send('Hospital Management System (HMS) Backend');
-});
-
-app.listen(port, () => {
-  console.log(`Server started at http://localhost:${port}`);
-});
+connectDB()
+  .then(() => {
+    app.listen(process.env.PORT || 8000, () => {
+      console.log(`Server is running on  : http://localhost:${conf.Port}`);
+    });
+  })
+  .catch((err) => {
+    console.log("MONGO db connection failed", err);
+  });
