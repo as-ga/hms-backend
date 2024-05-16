@@ -4,74 +4,54 @@ import jwt from "jsonwebtoken";
 import conf from "../conf/conf.js";
 import { userSchemaType } from "../types/type.js";
 
-const AddressSchema = new Schema({
-  address1: {
-    type: String,
-  },
-  address2: {
-    type: String,
-  },
-  city: {
-    type: String,
-  },
-  state: {
-    type: String,
-  },
-  country: {
-    type: String,
-  },
-  pincode: {
-    type: String,
-  },
-});
-
 const userSchema = new Schema(
   {
-    username: {
-      type: String,
-      required: [true, "Please enter your username"],
-      unique: [true, "Username already exists"],
-    },
     email: {
       type: String,
       required: [true, "Please enter your email"],
       unique: [true, "Email already exists"],
       match: [/.+\@.+\..+/, "Please enter a valid email"],
     },
+
     phone: {
       type: String,
+      required: [true, "Please enter your phone number this is required"],
       unique: [true, "Phone number already exists"],
     },
-    firstName: {
+
+    fullName: {
       type: String,
-      required: true,
+      required: [true, "Please enter your full name"],
     },
-    lastName: {
-      type: String,
-    },
+
     avatar: {
       type: String,
     },
+
     gender: {
       type: String,
       required: [true, "Please select your gender"],
       enum: ["male", "female", "other"],
     },
-    dob: {
-      type: Date,
-    },
-    address: [AddressSchema],
-    userType: {
-      type: String,
-      enum: ["admin", "doctor", "staff", "other", "user"],
-      default: "user",
-    },
+
     password: {
       type: String,
       required: [true, "Password is required"],
       minlength: 6,
       select: false,
     },
+
+    userType: {
+      type: String,
+      enum: ["admin", "doctor", "staff", "other", "user"],
+      default: "user",
+    },
+
+    isVerified: {
+      type: Boolean,
+      default: false,
+    },
+
     refreshToken: {
       type: String,
     },
